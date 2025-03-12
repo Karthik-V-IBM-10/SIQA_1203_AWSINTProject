@@ -24,6 +24,20 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.siqa_1203_awsint.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_1203_AWSINTProject
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
 - serviceName: project.siqa_1203_awsint.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_1203_AWSINTProject
